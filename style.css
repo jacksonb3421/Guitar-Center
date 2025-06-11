@@ -81,3 +81,8 @@ nav ul li a.active {
 main {
   flex-grow: 1;
   margin-top: 90px; /* space b*
+  .logo a {
+  color: #fff !important;         /* white color */
+  text-decoration: none !important; /* no underline */
+  cursor: pointer;
+}

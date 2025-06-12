@@ -86,3 +86,24 @@ main {
   text-decoration: none !important; /* no underline */
   cursor: pointer;
 }
+/* Footer */
+footer {
+  background-color: #b22222; /* firebrick red */
+  color: #fff;
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: auto;
+  box-shadow: 0 -2px 8px rgba(178, 34, 34, 0.4);
+}
+
+footer a {
+  color: #ffe5dc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}

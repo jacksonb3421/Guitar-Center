@@ -68,7 +68,7 @@ nav ul li a.active {
 /* Main content */
 main {
   flex-grow: 1;
-  margin-top: 90px; /* space below fixed header */
+  margin-top: 70px; /* space below fixed header */
   margin-bottom: 70px; /* space above footer */
   padding: 40px 60px;
   background: #fff; /* white background */

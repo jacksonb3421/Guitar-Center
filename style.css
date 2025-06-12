@@ -43,18 +43,6 @@ header {
   user-select: none;
 }
 
-/* Fix for logo link color and no underline */
-.logo a {
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.logo a:hover {
-  color: #e06666; /* lighter red on hover */
-  text-decoration: underline;
-}
-
 nav ul {
   list-style: none;
   display: flex;
@@ -80,30 +68,64 @@ nav ul li a.active {
 /* Main content */
 main {
   flex-grow: 1;
-  margin-top: 90px; /* space b*
-  .logo a {
-  color: #fff !important;         /* white color */
-  text-decoration: none !important; /* no underline */
-  cursor: pointer;
+  margin-top: 90px; /* space below fixed header */
+  margin-bottom: 70px; /* space above footer */
+  padding: 40px 60px;
+  background: #fff; /* white background */
+  border-radius: 12px;
+  max-width: 1200px;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  color: #222; /* dark text */
+  min-height: 150vh; /* Increased height for more scroll */
+  box-shadow: 0 0 15px rgba(178, 34, 34, 0.2);
 }
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Georgia', serif;
+  margin-bottom: 20px;
+  color: #b22222; /* dark red headings */
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
 /* Footer */
 footer {
-  background-color: #b22222; /* firebrick red */
+  background: #b22222;
   color: #fff;
-  padding: 20px 40px;
   text-align: center;
+  padding: 30px 40px;
   font-size: 0.9rem;
-  margin-top: auto;
-  box-shadow: 0 -2px 8px rgba(178, 34, 34, 0.4);
+  box-shadow: 0 -3px 10px rgba(178, 34, 34, 0.8);
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-footer a {
-  color: #ffe5dc;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-footer a:hover {
-  text-decoration: underline;
-  color: #ffffff;
-}
+/* Responsive Nav (mobile) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  main {
+    width: 95vw;
+    padding: 20px;
+    margin-top: 120px;
+    margin-bottom: 90px;
+  }
+} 

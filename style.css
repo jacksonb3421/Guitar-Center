@@ -69,7 +69,7 @@ nav ul li a.active {
 main {
   flex-grow: 1;
   margin-top: 20px; /* space below fixed header */
-  margin-bottom: 70px; /* space above footer */
+  margin-bottom: 20px; /* space above footer */
   padding: 40px 60px;
   background: #fff; /* white background */
   border-radius: 12px;
